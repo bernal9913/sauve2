@@ -1,4 +1,8 @@
 {
-    "testFiles":"**/*.*",
-    "defaultCommandTimeout":4000
+    "defaultCommandTimeout":4000,
+    "env":{
+        "url": "https://demo.opencart.com"
+    },
+    "testFiles":"**/*.*"
+    
 }

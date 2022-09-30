@@ -1,12 +1,15 @@
-class AuthenticationPage{
-    getEmailAddressInput(){
-        cy.get('#email')
+class AutheticationPage {
+    getEmailAddressInput() {
+        return cy.get('#email')
     }
-    getPasswordInput(){
-        cy.get('#passwd')
+ 
+    getPasswordInput() {
+        return cy.get('#passwd')
     }
-    getSignInButton(){
-        cy.get('#SubmitLogin')
+    
+    getSignInButton() {
+        return cy.get('#SubmitLogin')
     }
+ 
 }
-export default AuthenticationPage;
+export default AutheticationPage;

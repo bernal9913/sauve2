@@ -1,9 +1,11 @@
-class ShippingPage{
-    getTermsOfService(){
-        cy.get('#cgv')
+class ShippingPage {
+    getTermsOfServiceCheckbox() {
+        return cy.get('#cgv')
     }
-    getProceedToCheckoutButton(){
-        cy.get('.cart_navigation > .button')
+ 
+    getProceedToCheckoutButton() {
+        return cy.get('.cart_navigation > .button')
     }
+ 
 }
 export default ShippingPage;
