@@ -95,7 +95,7 @@ describe('Primer conjunto de casos de prueba', function () {
     Cypress.config('defaultCommandTimeout',15000)
     it('Crear una compra desde cero', function () {
         homePage.getSearchBoxInput().type('Blouse')
-        shippingPage.getTermsOfServiceCheckbox().check().should('be.checked')
+        //shippingPage.getTermsOfServiceCheckbox().check().should('be.checked')
         homePage.getSearchBoxButton().click()
         homePage.getAddToCardElementButton("Blouse").click()
         homePage.getProceedToCheckoutButton().click()
@@ -104,8 +104,8 @@ describe('Primer conjunto de casos de prueba', function () {
         shoppingSummaryCartPage.getProductPriceText().should('contain.text', '27.00')
         shoppingSummaryCartPage.getProceedToCheckoutButton().click()
  
-        authenticationPage.getEmailAddressInput().type('cypress@ateneaconocimientos.net')
-        authenticationPage.getPasswordInput().type('Atenea')
+        authenticationPage.getEmailAddressInput().type('seapagasolalalapqpp@gmail.com')
+        authenticationPage.getPasswordInput().type('asd123')
         authenticationPage.getSignInButton().click()
  
         addressPage.getProceedToCheckoutButton().click()
